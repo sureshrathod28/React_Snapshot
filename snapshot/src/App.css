@@ -1,0 +1,67 @@
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+.gallery img {
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  object-fit: cover; /* Preserve the image aspect ratio */
+  margin: 5px;
+  transition: transform 0.3s ease-in-out; /* Add spacing between images */
+}
+.image-container {
+  position: relative;
+  width: 200px; /* Adjust the width as needed */
+  height: 200px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover img {
+  transform: scale(1.25); /* Adjust the scale factor as desired */
+}
+
+.buttons{
+  display: inline-block;
+  
+}
+.buttons button{
+  margin: 5px;
+  background-color:black;
+  border: 0px;
+  color: white;
+  cursor: pointer;
+}
+.container{
+  text-align: center;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 300px; /* Adjust width as needed */
+}
+
+.search-input {
+  flex-grow: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-button {
+  padding: 8px;
+  background-color:black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-left: 8px;
+  cursor: pointer;
+}
